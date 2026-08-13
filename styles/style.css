@@ -36,7 +36,7 @@ menu {
 menu a {
     padding: 12.5px 18px;
     border-radius: 5px;
-    color: white;
+    color: var(--fundo-card);
     text-decoration: none;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -90,4 +90,13 @@ section#ficha div {
     align-items: center;
     font-size: 1.5em;
     gap: 10px;
+}
+
+section#ficha div > a {
+    color: var(--cor-principal);
+    transition: color 0.5s;
+}
+
+section#ficha div > a:hover {
+    color: var(--cor-secundaria);
 }
