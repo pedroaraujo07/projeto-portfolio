@@ -15,6 +15,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--cor-principal);
 }
 
 body {
@@ -99,4 +100,19 @@ section#ficha div > a {
 
 section#ficha div > a:hover {
     color: var(--cor-secundaria);
+}
+
+
+section#detalhes {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background-color: var(--fundo-card);
+    color: var(--cor-principal);
+    border-radius: 5px;
+    padding: 20px;
 }
