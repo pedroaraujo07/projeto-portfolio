@@ -190,3 +190,34 @@ section#detalhes {
 .formacao-container .nome-formacao {
     color: var(--preto);
 }
+
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.projetos-container .div-projeto {
+    background-color: var(--fundo);
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 5px solid var(--cor-secundaria);
+    color: var(--preto);
+    transition: border-left 0.5s ease;
+}
+
+.projetos-container .div-projeto:hover {
+    border-left: 15px solid var(--cor-principal);
+}
+
+.projetos-container img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.projetos-container .descricao:hover {
+    cursor: pointer;
+}
