@@ -10,6 +10,32 @@
 
 @media screen and (min-width: 768px) {
 
+    header {
+        z-index: 1;
+    }
+
+    main {
+        grid-template: 1fr / 20px 300px 20px 1fr 20px;
+        gap: 0;
+    }
+
+    section#ficha {
+        grid-column: 2 / 3;
+        position: sticky;
+        top: 70px;
+        margin-bottom: 20px;
+        z-index: 0;
+        height: 650px;
+    }
+
+    section#ficha p {
+        font-size: 1.1em;
+    }
+
+    section#detalhes {
+        grid-column: 4 / 5;
+    }
+
     .skill-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;

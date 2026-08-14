@@ -25,6 +25,11 @@ body {
     background-color: var(--fundo);
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
+
 menu {
     background-color: var(--cor-principal);
     height: 50px;
@@ -54,6 +59,10 @@ main {
     grid-template: 1fr / 1fr 90vw 1fr;
     gap: 20px;
     margin-top: 20px;
+}
+
+div#hidden {
+    scroll-margin-top: 100px;
 }
 
 section#ficha {
@@ -119,6 +128,10 @@ section#detalhes {
     padding: 20px;
 }
 
+section #skills {
+    scroll-margin-top: 70px;
+}
+
 .skill-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -151,6 +164,10 @@ section#detalhes {
     border-radius: 4px;
 }
 
+
+section #formacao {
+    scroll-margin-top: 65px;
+}
 
 .formacao-container {
     display: grid;
@@ -192,6 +209,10 @@ section#detalhes {
     color: var(--preto);
 }
 
+
+section #projetos {
+    scroll-margin-top: 65px;
+}
 
 .projetos-container {
     display: grid;
