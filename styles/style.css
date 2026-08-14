@@ -146,7 +146,47 @@ section#detalhes {
 .skill-container .barra .progresso {
     width: 100%;
     height: 10px;
-    background-color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
     border-radius: 4px;
 }
 
+
+.formacao-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.formacao-container .div-formacao {
+    width: 100%;
+    background-color: var(--fundo);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 3px;
+    padding: 2px 15px;
+    border-left: 5px solid var(--cor-secundaria);
+    transition: border-left 0.5s ease;
+}
+
+.formacao-container .div-formacao:hover {
+    border-left: 15px solid var(--cor-principal);
+    cursor: pointer;
+}
+
+.formacao-container .ano-formacao {
+    color: var(--preto);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.formacao-container .local-formacao {
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    font-size: large;
+}
+
+.formacao-container .nome-formacao {
+    color: var(--preto);
+}
