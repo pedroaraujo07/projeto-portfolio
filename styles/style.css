@@ -11,6 +11,7 @@
     --cor-secundaria: rgb(217, 125, 250);
     --fundo: rgb(242, 242, 242);
     --fundo-card: rgb(255, 255, 255);
+    --preto: black;
 }
 
 html {
@@ -116,3 +117,36 @@ section#detalhes {
     border-radius: 5px;
     padding: 20px;
 }
+
+.skill-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill-container .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.skill-container .info .nome {
+    color: var(--preto);
+}
+
+.skill-container .barra {
+    width: 100%;
+    height: 10px;
+    background-color: var(--fundo);
+    border-radius: 4px;
+}
+
+.skill-container .barra .progresso {
+    width: 100%;
+    height: 10px;
+    background-color: var(--cor-principal);
+    border-radius: 4px;
+}
+
