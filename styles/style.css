@@ -109,6 +109,7 @@ section#detalhes {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -220,4 +221,20 @@ section#detalhes {
 
 .projetos-container .descricao:hover {
     cursor: pointer;
+}
+
+footer {
+    background-color: var(--cor-principal);
+    color: var(--fundo-card);
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--fundo-card)
+}
+
+footer a:hover {
+    color: var(--cor-secundaria);
 }

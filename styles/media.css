@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+:root {
+    --cor-principal: rgb(158, 0, 215);
+    --cor-secundaria: rgb(217, 125, 250);
+    --fundo: rgb(242, 242, 242);
+    --fundo-card: rgb(255, 255, 255);
+    --preto: black;
+}
+
+@media screen and (min-width: 768px) {
+
+    .skill-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: column;
+    }
+
+    .projetos-container .div-projeto {
+        display: flex;
+        gap: 15px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .projetos-container img {
+        width: 50%;
+        aspect-ratio: 14 / 9;
+        max-height: 250px;
+    }
+
+    .projetos-container .info-projeto {
+        max-width: 50%;
+    }
+
+
+}
