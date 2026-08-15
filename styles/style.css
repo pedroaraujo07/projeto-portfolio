@@ -7,11 +7,12 @@
 }
 
 :root {
-    --cor-principal: rgb(158, 0, 215);
-    --cor-secundaria: rgb(217, 125, 250);
+    --cor-principal: #05299E;
+    --cor-secundaria: #5E4AE3;
     --fundo: rgb(242, 242, 242);
     --fundo-card: rgb(255, 255, 255);
     --preto: black;
+    --preto-inverso: white;
 }
 
 html {
@@ -19,10 +20,20 @@ html {
     background-color: var(--cor-principal);
 }
 
+body.escuro {
+    --cor-principal: #BDFFFD;
+    --cor-secundaria: #9FFFF5;
+    --fundo-card: #343a40;
+    --fundo: #212529;
+    --preto: rgb(247, 247, 247);
+    --preto-inverso: black;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5em;
     background-color: var(--fundo);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 header {
@@ -93,6 +104,7 @@ section#ficha h1 {
 section#ficha p {
     font-size: 15px;
     line-height: 1.5em;
+    color: var(--preto);
 }
 
 section#ficha div {

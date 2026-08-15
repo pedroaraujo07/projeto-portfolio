@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 :root {
-    --cor-principal: rgb(158, 0, 215);
-    --cor-secundaria: rgb(217, 125, 250);
+    --cor-principal: #05299E;
+    --cor-secundaria: #5E4AE3;
     --fundo: rgb(242, 242, 242);
     --fundo-card: rgb(255, 255, 255);
     --preto: black;
+    --preto-inverso: white;
 }
 
 @media screen and (min-width: 768px) {
